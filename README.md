@@ -10,16 +10,15 @@
 
 ### Association
 - has_many :groups_users
-- has_many :groups, through: groups_users
+- has_many :groups, through: group_users
 - has_many :chats
 
 ## chatsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|title|text|null: false|
-|text|text|null: false|
-|image|text|null: false|
+|text|text||
+|image|text||
 |user_id|integer|null: false, foreign_key:true| 
 |group_id|integer|null: false,foreign_key:true|
 
@@ -34,9 +33,9 @@
 |name|string|null: false|
 
 ### Assiciation
-- has_many :users,through::group_uses
+- has_many :users,through::group_users
 - has_many:group_users
-- has_many:chat 
+- has_many:chats 
 
 
 ## groups_usersテーブル
