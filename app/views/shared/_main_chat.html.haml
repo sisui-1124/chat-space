@@ -1,0 +1,36 @@
+.chat-main
+  .main-header 
+    .left-box
+      .current-group
+        tech
+      .member-list
+        Member :atsuro
+    .edit-button 
+      Edit
+  .messages
+    .message
+      .message-user
+        .user__name
+          masa
+        .date
+          2019/11/22(wed) 17:43:01
+      .group-message
+        おはよう！
+        .user__name
+          sin
+        .date
+          2019/11/25(fri) 20:11:30
+      .group-message
+        こんばんは
+  .form
+    .input-box
+      .input-box__text
+        type a message
+      .input-box__image
+        .label
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file"}
+    .input-box__submit-btn
+      send
+    
