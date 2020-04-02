@@ -1,4 +1,4 @@
-.chat-main
+.main-chat
   .main-header 
     .left-box
       .current-group
@@ -9,27 +9,29 @@
       Edit
   .messages
     .message
-      .message-user
-        .message-user__name
+      .user
+        .user__name
           masa
         .date
           2019/11/22(wed) 17:43:01
-      .group-message
+      .talk
         おはよう！
-        .message-user__name
+      .user
+        .name
           sin
         .date
           2019/11/25(fri) 20:11:30
-      .group-message
-        こんばんは。
+      .talk
+        こんばんは
   .form
     .input-box
-      .input-box__text
+      .text
         type a message
-      .input-box__image
+      .image
         .label
           = link_to'#' do
             = icon('fas', 'image')
-    .input-box__submit-btn
+            %input{type: "file"}
+    .submit-btn
       send
     
