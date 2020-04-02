@@ -7,7 +7,6 @@
  color: white;
  float: left;
 }
-
 .side-header {
   height: 100px;
   background-color: #253141;
@@ -16,6 +15,7 @@
   align-items: center;
 }
 
+  
 .side-header__box {
   display: flex;
   justify-content: space-between;
@@ -23,16 +23,11 @@
   font-weight: bold;
 }
 
-.box__menu{
+.box__menu {
   display:flex
-  
-}
-.menu__new-group {  
-  margin: 0px 5px;
-}
-
-.menu__edit-user {
-  
+  &__new-group {  
+    margin: 0px 5px;
+  }
 }
 
 .icon{
@@ -44,11 +39,10 @@
   overflow: scroll;
   color: white;
   padding: 20px 20px 0;
-}
-
-.group__name {
-  font-size: 15px;
-  margin-bottom: 5px;
+  &__group__name {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
 }
 .group__message {
   font-size: 11px;
