@@ -28,8 +28,9 @@
         type a message
       .input-box__image
         .label
-          = link_to'#' do
+          %label{class: "input-box__image"}
             = icon('fas', 'image')
+            %input{type: "file", class: "input-icon"} 
     .input-box__submit-btn
       send
     
