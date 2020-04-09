@@ -2,16 +2,18 @@
   .side-header
     .side-header__box
       .user-name
-        atsuro
+        = current_user.name
       .box__menu
-        .menu__new-group
-          = link_to '#' do
-            = icon('fa', 'edit',class: 'icon')
-          = link_to '#' do
-            = icon('fa', 'cog',class: 'icon')
+        .new-group
+          = link_to new_group_path do
+            = icon('fas', 'pen-square',class: 'icon')
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog',class: 'icon')
   .groups
-    .group
-      .group__name
-        グループ名
-      .group__message
-        まだメッセージはありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            まだメッセージはありません

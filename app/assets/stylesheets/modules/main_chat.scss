@@ -12,19 +12,16 @@
   border-bottom: solid 1px#eee;
   overflow: scroll; 
 }
-  
+
 .left-box {
   margin-top: 35px;
-}
-
-.current-group{
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 15px;
-  font-weight: normal;
-  
-}
-
+  &__current-group{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: normal;
+  }
+} 
 .member-list {
   display: flex;
   font-size: 12px;
@@ -46,26 +43,23 @@
   overflow: scroll;
   padding: 46px 40px;
 }
-
 .message {
   padding-bottom: 40px;
-}
-
-.message-user {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.user__name {
-  color: #434A54;
-  font-size: 16px;
-  font-weight: bold;
-}
+  
+  &__message-user {
+    display: flex;
+    margin-bottom: 10px;
+    &__message-user__name {
+      color: #434A54;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
 
 .date {
   color: #999999;
   font-size: 12px; 
-  margin-left: 10px;
+  margin-left: 10px;    
 }
 
 .group-message {
@@ -90,8 +84,7 @@
   display: flex;
   width: 100%;
 }
-
-.input-box__text{
+.input-box__text {
   height: 50px;
   padding: 0 40px 0 10px;
   color: #434a54;
@@ -107,15 +100,14 @@
   position: absolute;
   font-size: 1.3rem;
   cursor: pointer;
-}
-
-.label {
-  display: inline-block;
-  color: black;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  &__label {
+    display: inline-block;
+    color: black;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 .input-box__submit-btn {
@@ -127,6 +119,6 @@
   line-height: 50px;
 }
 
-.label input{
+.input-icon{
   display: none;
 }
