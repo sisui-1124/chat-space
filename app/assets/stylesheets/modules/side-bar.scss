@@ -1,37 +1,41 @@
 .wrapper{
   width: 100vw;
   height: 100vh;
+  display: flex;
 }
-.side_bar {
+
+.side-bar {
  width: 300px;
  color: white;
- float: left;
 }
-.side-header {
+
+.header {
   height: 100px;
   background-color: #253141;
   padding: 0 20px;
   display:flex;
   align-items: center;
+  .icon{
+    color: white;
+  }
 }
-
   
-.side-header__box {
+.header__name {
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-weight: bold;
 }
 
-.box__menu {
+.header__lists {
   display:flex;
-  &__new-group {  
-    margin: 0px 5px;
+  a {
+    text-decoration: none;
+    color: white
   }
 }
-
-.icon{
-  color: white;
+.list{
+  margin: 0px 5px;
 }
 .groups {
   height: calc(100vh - 100px);
@@ -39,6 +43,10 @@
   overflow: scroll;
   color: white;
   padding: 20px 20px 0;
+  a {
+    text-decoration: none;
+    color: white;
+  }
   &__group__name {
     font-size: 15px;
     margin-bottom: 5px;
@@ -47,10 +55,5 @@
 .group__message {
   font-size: 11px;
   margin-bottom: 40px;
-  
 }
   
-a{
-  text-decoration: none;
-  color: white;
-}
