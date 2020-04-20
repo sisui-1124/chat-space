@@ -4,7 +4,7 @@
       .current-group
         %h2 #{@group.name}
       .member-list
-        Member :
+        Members :
         - @group.users.each do |user|
           %span.chat-header__user #{user.name}
     .edit-button 
