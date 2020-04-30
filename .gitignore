@@ -15,7 +15,8 @@
 
 # Ignore Byebug command history file.
 .byebug_history
-public/uploads/*
-*.cache
+# public/uploads/*
+# *.cache
 
-public/uploads/*
+# public/uploads/*
+config/secrets.yml
